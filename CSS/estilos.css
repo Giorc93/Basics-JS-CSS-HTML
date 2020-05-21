@@ -1,0 +1,73 @@
+		*{					/*Selecciona todos los elementos*/
+			margin: 0px;		
+			padding: 0px;
+		}		
+
+		body{
+			background: lightgray; /*Color de fondo del body*/
+			font-family: arial, helvetica, sans-serif; /*Fuentes a utlilizar dependiendo de las fuentes disponibles en el navegador del usuario*/
+		}
+		#container{			/*Selecciona el elemento con id: container*/
+			width: 1100px;	/*Ancho*/
+			margin: 0px auto;	/*Margen del elemento*/
+			border: 1px solid black;	/*Establece borde del elemento caracteristica y color*/
+		}
+		header{
+			background: red;	/*Fondo de la etiqueta header*/
+			height: 100px;		/*Alto del elemento*/
+			width: 100%;		/*Ancho del elemento. height i width se pueden expresar en px o en porcentaje*/
+			text-align: center;	/*Alineado del texto (ancho)*/
+			line-height: 100px;	/*Alineado del texto (alto)*/
+			color: white;		/*Color del texto*/
+			border-bottom: 3px dashed black;	/*Borde inferior ancho, caracteristica, color*/
+		}
+		nav{
+			height: 50px;	/*Altura de la etiqueta nav*/
+			background: lightblue;	/*Color de fondo del elemento*/
+			border-bottom: 1px solid black;	/*Borde inferior ancho, caracterstica, color*/
+		}
+		nav ul li{	/*Selecciona los elementos ul y li contenidos en nav*/
+			height: 30px;	/*Altura de los elementos*/
+			float: left;	/*Posición de los elementos*/
+			list-style: none;	/*Estilo de lista*/
+			margin: 10px;	/*Margen de los elementos*/
+			line-height: 30px;	/*Alineado (alto)*/
+		}
+		.clearfix{	/*Selecciona el elemento con la class: clearfix*/
+			clear: both;	/*Hace la separación entre elementos*/
+		}
+		#content{
+			float: left;	/*Ubica el elemento con el id:content al lado izquierdo de la pantalla*/
+			width: calc(80% - 80px);	/*Dimensiona el elemento la posición establecida con un porcentaje del 80% del tamaño total de la pantalla, mediante calc() se pueden realizar operaciones sobre el valor en %*/
+			background: green;	/*Color del fondo*/
+			min-height: 500px;	/*Altura minima del elemento, el padding modifica ésta caracteristica*/
+			padding: 40px;	/*Margen en todas las direcciones del elemento*/
+		}
+		aside{
+			float: right;	/*Ubica el elemento con la etiqueta aside al lado derecho de la pantalla*/
+			width: calc(20% - 20px);	/*Dimensiona el elemento en la posición establecida con un porcentaje del 20%*/
+			background: orange; /*Color fondo*/
+			min-height: 560px;	/*Altura minima*/
+			padding: 10px;	/*Margen en todas las direcciones del elemento*/
+		}
+		footer{
+			background: black; /*Fondo del elemento*/
+			color: white;	/*Color del elemento*/
+			text-align: center;	/*Alineado del elemento*/
+			height: 50px; /*Altura del elemento*/
+			line-height: 50px;	/*Alineado del elemento(alto)*/
+		}
+		.article{	/*Selecciona el elemento con el class: article*/
+			color: white;	/*Color del elemento*/
+			margin-top: 15px;	/*Linea margen superior*/
+			margin-bottom: 15px;	/*Linea margen inferior*/
+			border-bottom: 1px solid black;	/*Borde inferior*/
+			padding-bottom: 10px;	/*Margen inferior*/
+		}
+		.article:first-child{	/*Selecciona el primer elemento de la etiqueta*/
+			border-top: 1px solid black;	/*Borde superior*/
+			padding-top: : 10px;	/*Margen superior*/
+		}
+		.article h2{	/*Selecciona el elemento <h2> en la etiqueta con el class: article*/
+			font-size: 25px;	/*Modifica el tamaño de la fuente*/
+		}
